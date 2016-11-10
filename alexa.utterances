@@ -53,9 +53,9 @@ CleanAudio clean music library
 CleanVideo clean library
 CleanVideo clean video library
 ContinueShow continue last show
-ContinueShow continue show
 ContinueShow continue playing last show
 ContinueShow continue playing show
+ContinueShow continue show
 ContinueShow continue watching last show
 ContinueShow continue watching show
 CurrentPlayItemInquiry what audio is currently playing
@@ -189,6 +189,28 @@ CurrentPlayItemTimeRemaining what time does video end
 CurrentPlayItemTimeRemaining what time is this over
 CurrentPlayItemTimeRemaining what time this ends
 CurrentPlayItemTimeRemaining what time this is over
+CurrentPlayItemTimeRemaining what time will audio end
+CurrentPlayItemTimeRemaining what time will episode end
+CurrentPlayItemTimeRemaining what time will film end
+CurrentPlayItemTimeRemaining what time will movie end
+CurrentPlayItemTimeRemaining what time will my audio end
+CurrentPlayItemTimeRemaining what time will my episode end
+CurrentPlayItemTimeRemaining what time will my film end
+CurrentPlayItemTimeRemaining what time will my movie end
+CurrentPlayItemTimeRemaining what time will my show end
+CurrentPlayItemTimeRemaining what time will my song end
+CurrentPlayItemTimeRemaining what time will my video end
+CurrentPlayItemTimeRemaining what time will show end
+CurrentPlayItemTimeRemaining what time will song end
+CurrentPlayItemTimeRemaining what time will this audio end
+CurrentPlayItemTimeRemaining what time will this end
+CurrentPlayItemTimeRemaining what time will this episode end
+CurrentPlayItemTimeRemaining what time will this film end
+CurrentPlayItemTimeRemaining what time will this movie end
+CurrentPlayItemTimeRemaining what time will this show end
+CurrentPlayItemTimeRemaining what time will this song end
+CurrentPlayItemTimeRemaining what time will this video end
+CurrentPlayItemTimeRemaining what time will video end
 CurrentPlayItemTimeRemaining when does audio end
 CurrentPlayItemTimeRemaining when does episode end
 CurrentPlayItemTimeRemaining when does film end
@@ -364,12 +386,20 @@ PlayRandomEpisode watch episode of {Show}
 PlayRandomEpisode watch random episode of {Show}
 PlayRandomMovie play a random film
 PlayRandomMovie play a random movie
+PlayRandomMovie play a random {Genre} film
+PlayRandomMovie play a random {Genre} movie
 PlayRandomMovie play random film
 PlayRandomMovie play random movie
+PlayRandomMovie play random {Genre} film
+PlayRandomMovie play random {Genre} movie
 PlayRandomMovie watch a random film
 PlayRandomMovie watch a random movie
+PlayRandomMovie watch a random {Genre} film
+PlayRandomMovie watch a random {Genre} movie
 PlayRandomMovie watch random film
 PlayRandomMovie watch random movie
+PlayRandomMovie watch random {Genre} film
+PlayRandomMovie watch random {Genre} movie
 PlayerMoveDown go down
 PlayerMoveDown move down
 PlayerMoveDown pan down
