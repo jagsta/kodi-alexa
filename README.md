@@ -9,6 +9,7 @@ I've expanded it to support the following features:
 - Shuffle music by artist
 - Play random unwatched episode of TV show
 - Play random unwatched movie
+- Play random movie from a specific genre
 - Play specific episode of a TV show ('Play season 4 episode 10 of The Office')
 - Play specific movie
 - Continue watching next episode of last show that was watched
@@ -19,6 +20,7 @@ I've expanded it to support the following features:
 - Searching for something in your library
 - "Party mode" for music (shuffle all)
 - Play audio playlists
+- Play specific album
 
 ## Kodi Setup
 
