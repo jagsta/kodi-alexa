@@ -642,7 +642,7 @@ def GetMovies():
   return SendCommand(RPCString("VideoLibrary.GetMovies"))
 
 
-def GetGenreMovies(genre):
+def GetMoviesByGenre(genre):
   return SendCommand(RPCString("VideoLibrary.GetMovies", {"filter":{"genre":genre}}))
 
 
@@ -739,7 +739,7 @@ def GetUnwatchedMovies(max=90):
 # Returns a list of dictionaries with information about unwatched movies in a particular genre. Useful for
 # telling/showing users what's ready to be watched. Setting max to very high values
 # can take a long time.
-def GetUnwatchedGenreMovies(genre, max=90):
+def GetUnwatchedMoviesByGenre(genre, max=90):
   data = SendCommand(RPCString("VideoLibrary.GetMovies", {"limits":{"end":max}, "filter":{"field":"playcount", "operator":"lessthan", "value":"1"}, "filter":{"genre":genre}, "sort":{"method":"dateadded", "order":"descending"}, "properties":["title", "playcount", "dateadded" ]}))
   answer = []
   for d in data['result']['movies']:

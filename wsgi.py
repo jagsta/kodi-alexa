@@ -1053,13 +1053,13 @@ def alexa_play_random_movie(slots):
 
   # Select from specified genre if one was matched
   if genre_located:
-    movies_array = kodi.GetUnwatchedGenreMovies(genre_located['label'])
+    movies_array = kodi.GetUnwatchedMoviesByGenre(genre_located['label'])
   else:
     movies_array = kodi.GetUnwatchedMovies()
   if not len(movies_array):
     # Fall back to all movies if no unwatched available
     if genre_located:
-      movies = kodi.GetGenreMovies(genre_located['label'])
+      movies = kodi.GetMoviesByGenre(genre_located['label'])
     else:
       movies = kodi.GetMovies()
     if 'result' in movies and 'movies' in movies['result']:
