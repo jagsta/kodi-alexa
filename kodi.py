@@ -643,7 +643,7 @@ def GetMovies():
 
 
 def GetGenreMovies(genre):
-  return SendCommand(RPCString("VideoLibrary.GetMovies", "filter":{"genre":genre}))
+  return SendCommand(RPCString("VideoLibrary.GetMovies", {"filter":{"genre":genre}}))
 
 
 def GetMovieGenres():
