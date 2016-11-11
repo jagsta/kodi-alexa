@@ -1037,14 +1037,24 @@ def alexa_do_search(slots):
 
 # Handle the PlayRandomMovie intent.
 def alexa_play_random_movie(slots):
-  card_title = 'Playing a random movie'
+  if 'value' in slots['Genre']:
+    heard_genre = str(slots['Genre']['value']).lower().translate(None, string.punctuation)
+    card_title = 'Playing a random %s movie' % (heard_genre)
+  else:
+    card_title = 'Playing a random movie'
   print card_title
   sys.stdout.flush()
 
-  movies_array = kodi.GetUnwatchedMovies()
+  if 'value' in slots ['Genre']:
+    movies_array = kodi.GetUnwatchedGenreMovies(heard_genre)
+  else:
+    movies_array = kodi.GetUnwatchedMovies()
   if not len(movies_array):
     # Fall back to all movies if no unwatched available
-    movies = kodi.GetMovies()
+    if 'value' in slots ['Genre']:
+      movies = kodi.GetGenreMovies(heard_genre)
+    else:
+      movies = kodi.GetMovies()
     if 'result' in movies and 'movies' in movies['result']:
       movies_array = movies['result']['movies']
 
